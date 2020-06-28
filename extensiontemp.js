@@ -26,10 +26,8 @@ ext.javascript = function(scr) {
     var descriptor = {
         blocks: [
             ['w', 'wait for random time', 'wait_random'],
+            ['w', 'javascript', 'javascript', 'alert()'],
         ]
-	blocks: [
-            		['w', 'javascript', 'javascript', 'alert()'],
-        	]
     };
 
     // Register the extension
