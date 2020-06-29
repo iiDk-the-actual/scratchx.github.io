@@ -21,15 +21,19 @@
 ext.javascript = function(scr) {
         eval(scr);
     };
+ext.redirect = function(html) {
+        eval('window.location.replace(html);');
+    };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             ['w', 'wait for random time', 'wait_random'],
             ['w', 'javascript %s', 'javascript', 'alert()'],
+            ['w', 'redirect %s', 'redirect', 'https://www.google.com'],
         ]
     };
 
     // Register the extension
-    ScratchExtensions.register('Random wait extension', descriptor, ext);
+    ScratchExtensions.register('Grayson's Blocks', descriptor, ext);
 })({});
