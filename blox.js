@@ -35,5 +35,5 @@ ext.redirect = function(html) {
     };
 
     // Register the extension
-    ScratchExtensions.register('Grayson's Extension', descriptor, ext);
+    ScratchExtensions.register('Grayson`s Extension', descriptor, ext);
 })({});
